@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Order Form</title>
+</head>
+<body>
+
+<h2>Book Order Form</h2>
+
+<form action="/submit_form" method="post">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" size="30"><br><br>
+
+  <label for="category">Please select category of book:</label><br>
+  <select id="category" name="category">
+    <option value="adult_fiction">Adult Fiction</option>
+    <option value="non_fiction">Non-Fiction</option>
+    <option value="children">Children</option>
+    <option value="young_adult">Young Adult</option>
+  </select><br><br>
+
+  <label for="catalogue_number">Catalogue Number:</label><br>
+  <input type="text" id="catalogue_number" name="catalogue_number" size="30"><br><br>
+
+  <input type="checkbox" id="previous_customer" name="previous_customer">
+  <label for="previous_customer">Check if you have purchased from us before?</label><br><br>
+
+  <p>How would you like to pay? Choose any of the following:</p>
+  <input type="radio" id="mastercard" name="payment_method" value="mastercard">
+  <label for="mastercard">Mastercard</label><br>
+  <input type="radio" id="visa" name="payment_method" value="visa">
+  <label for="visa">Visa</label><br>
+  <input type="radio" id="diners_card" name="payment_method" value="diners_card">
+  <label for="diners_card">Diners Card</label><br><br>
+
+  <label for="submit_order">Thank you</label>
+  <input type="submit" id="submit_order" value="Submit order"><br><br>
+  
+  <label for="clear_form">To start again</label>
+  <input type="reset" id="clear_form" value="Clear Form">
+</form>
+
+</body>
+</html>
